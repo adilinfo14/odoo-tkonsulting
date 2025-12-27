@@ -1,0 +1,17 @@
+<odoo>
+
+    <record id="view_sale_order_form_timbre" model="ir.ui.view">
+        <field name="name">sale.order.form.timbre</field>
+        <field name="model">sale.order</field>
+        <field name="inherit_id" ref="sale.view_order_form"/>
+        <field name="arch" type="xml">
+
+            <xpath expr="//group[@name='group_totals']" position="inside">
+                <field name="timbre_amount" readonly="1"/>
+                <field name="total_with_timbre" readonly="1"/>
+            </xpath>
+
+        </field>
+    </record>
+
+</odoo>

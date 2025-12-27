@@ -1,0 +1,21 @@
+<odoo>
+
+    <!-- Menu racine Tkonsulting -->
+    <menuitem
+        id="menu_tkonsulting_root"
+        name="Tkonsulting"
+        sequence="10"
+    />
+
+    <!-- Sous-menu Timbres -->
+    <menuitem
+        id="menu_tkonsulting_timbre"
+        name="Timbres fiscaux"
+        parent="menu_tkonsulting_root"
+        action="action_tko_timbre"
+        groups="tko_timbre.group_tko_timbre_manager"
+        sequence="10"
+    />
+
+
+</odoo>
